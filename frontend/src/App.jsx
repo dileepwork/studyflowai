@@ -25,6 +25,9 @@ const ChatAssistant = ({ topic }) => {
   ]);
   const [input, setInput] = useState('');
 
+  // Check for environment variable, otherwise default to relative path (proxy)
+  const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+
   const handleSend = async () => {
     if (!input.trim()) return;
     const userMsg = { role: 'user', content: input };
@@ -33,7 +36,7 @@ const ChatAssistant = ({ topic }) => {
     setInput('');
 
     try {
-      const resp = await axios.post('/api/chat', {
+      const resp = await axios.post(`${API_BASE_URL}/api/chat`, {
         topic: topic,
         message: input
       });
@@ -131,7 +134,7 @@ const App = () => {
     formData.append('level', config.level);
 
     try {
-      const resp = await axios.post('/api/analyze', formData);
+      const resp = await axios.post(`${API_BASE_URL}/api/analyze`, formData);
       setResult(resp.data);
       playSound('success');
     } catch (err) {
