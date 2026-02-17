@@ -136,7 +136,11 @@ const App = () => {
       playSound('success');
     } catch (err) {
       console.error(err);
-      alert("Analysis failed. Make sure the backend is running.");
+      const serverError = err.response?.data?.error || "Analysis failed. Server error.";
+      if (err.response?.data?.traceback) {
+        console.error("Backend Traceback:", err.response.data.traceback);
+      }
+      alert(`Error: ${serverError}\nCheck console for details.`);
     } finally {
       setLoading(false);
     }
