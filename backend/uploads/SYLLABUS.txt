@@ -1,0 +1,27 @@
+
+You said:
+UNIT I PROBLEM SOLVING CS3491 Artificial Intelligence and Machine Learning Syllabus
+Introduction to AI – AI Applications – Problem solving agents – search algorithms – uninformed search
+strategies – Heuristic search strategies – Local search and optimization problems – adversarial search
+– constraint satisfaction problems (CSP)
+
+UNIT II PROBABILISTIC REASONING CS3491 Artificial Intelligence and Machine Learning Notes
+Acting under uncertainty – Bayesian inference – naïve bayes models. Probabilistic reasoning –
+Bayesian networks – exact inference in BN – approximate inference in BN – causal networks.
+
+UNIT III SUPERVISED LEARNING CS3491 Artificial Intelligence and Machine Learning Important Questions
+Introduction to machine learning – Linear Regression Models: Least squares, single & multiple variables,
+Bayesian linear regression, gradient descent, Linear Classification Models: Discriminant function –
+Probabilistic discriminative model – Logistic regression, Probabilistic generative model – Naive Bayes,
+Maximum margin classifier – Support vector machine, Decision Tree, Random forests
+
+UNIT IV ENSEMBLE TECHNIQUES AND UNSUPERVISED LEARNING CS3491 Artificial Intelligence and Machine Learning Question Bank
+Combining multiple learners: Model combination schemes, Voting, Ensemble Learning – bagging,
+boosting, stacking, Unsupervised learning: K-means, Instance Based Learning: KNN, Gaussian mixture
+models and Expectation maximization
+
+UNIT V NEURAL NETWORKS CS3491 Artificial Intelligence and Machine Learning Question Paper
+Perceptron – Multilayer perceptron, activation functions, network training – gradient descent
+optimization – stochastic gradient descent, error backpropagation, from shallow networks to deep
+networks –Unit saturation (aka the vanishing gradient problem) – ReLU, hyperparameter tuning, batch
+normalization, regularization, dropout.
