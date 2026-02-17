@@ -3,7 +3,7 @@
     "private": true,
     "scripts": {
         "install": "cd frontend && npm install",
-        "vercel-build": "cd frontend && npm run build && cd .. && mkdir -p public && cp -r frontend/dist/* public/",
-        "build": "cd frontend && npm run build && cd .. && mkdir -p public && cp -r frontend/dist/* public/"
+        "vercel-build": "cd frontend && npm install && npm run build",
+        "build": "cd frontend && npm install && npm run build"
     }
 }
