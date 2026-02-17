@@ -3,25 +3,11 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "backend/app.py"
+      "destination": "/api/index.py"
     },
     {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "installCommand": "npm install",
-        "distDir": "dist"
-      }
-    },
-    {
-      "src": "backend/app.py",
-      "use": "@vercel/python"
     }
   ]
 }
