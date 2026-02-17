@@ -5,9 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "vercel-build": "vite build",
-    "postbuild": "echo 'Listing dist directory...' && ls -R dist",
+    "build": "vite build --outDir ../public --emptyOutDir",
+    "vercel-build": "vite build --outDir ../public --emptyOutDir",
     "lint": "eslint .",
     "preview": "vite preview"
   },
